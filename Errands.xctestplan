@@ -1,0 +1,27 @@
+{
+  "configurations" : [
+    {
+      "id" : "C1502946-7AEF-4C36-87EC-FF0A75526AAA",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "locationScenario" : {
+      "identifier" : "New York, NY, USA",
+      "referenceType" : "built-in"
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Errands.xcodeproj",
+      "identifier" : "752DBDBA2BCF319800440752",
+      "name" : "Errands"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

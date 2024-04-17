@@ -13,9 +13,11 @@
 		752DBDC62BCF319900440752 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 752DBDC52BCF319900440752 /* Base */; };
 		752DBDC82BCF319900440752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752DBDC72BCF319900440752 /* Assets.xcassets */; };
 		752DBDCB2BCF319900440752 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 752DBDCA2BCF319900440752 /* Base */; };
+		75420B1F2BCF38C0000F82C6 /* Ollie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75420B1E2BCF38C0000F82C6 /* Ollie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750396882BCF6128006271ED /* Errands.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Errands.xctestplan; sourceTree = "<group>"; };
 		752DBDBB2BCF319800440752 /* Errands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Errands.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752DBDBE2BCF319900440752 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		752DBDC02BCF319900440752 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,7 @@
 		752DBDC72BCF319900440752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		752DBDCA2BCF319900440752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		752DBDCC2BCF319900440752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75420B1E2BCF38C0000F82C6 /* Ollie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ollie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 		752DBDB22BCF319800440752 = {
 			isa = PBXGroup;
 			children = (
+				750396882BCF6128006271ED /* Errands.xctestplan */,
 				752DBDBD2BCF319800440752 /* Errands */,
 				752DBDBC2BCF319800440752 /* Products */,
 			);
@@ -59,6 +63,7 @@
 				752DBDBE2BCF319900440752 /* AppDelegate.swift */,
 				752DBDC02BCF319900440752 /* SceneDelegate.swift */,
 				752DBDC22BCF319900440752 /* ViewController.swift */,
+				75420B1E2BCF38C0000F82C6 /* Ollie.swift */,
 				752DBDC42BCF319900440752 /* Main.storyboard */,
 				752DBDC72BCF319900440752 /* Assets.xcassets */,
 				752DBDC92BCF319900440752 /* LaunchScreen.storyboard */,
@@ -141,6 +146,7 @@
 				752DBDC32BCF319900440752 /* ViewController.swift in Sources */,
 				752DBDBF2BCF319900440752 /* AppDelegate.swift in Sources */,
 				752DBDC12BCF319900440752 /* SceneDelegate.swift in Sources */,
+				75420B1F2BCF38C0000F82C6 /* Ollie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
