@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751DD4682BD6F5CA0061CD07 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DD4672BD6F5CA0061CD07 /* LocationSearchTable.swift */; };
 		752DBDBF2BCF319900440752 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752DBDBE2BCF319900440752 /* AppDelegate.swift */; };
 		752DBDC12BCF319900440752 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752DBDC02BCF319900440752 /* SceneDelegate.swift */; };
 		752DBDC32BCF319900440752 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752DBDC22BCF319900440752 /* ViewController.swift */; };
@@ -14,10 +15,14 @@
 		752DBDC82BCF319900440752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752DBDC72BCF319900440752 /* Assets.xcassets */; };
 		752DBDCB2BCF319900440752 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 752DBDCA2BCF319900440752 /* Base */; };
 		75420B1F2BCF38C0000F82C6 /* Ollie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75420B1E2BCF38C0000F82C6 /* Ollie.swift */; };
+		7571AC1E2BD0633600ECE768 /* PinInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7571AC1D2BD0633600ECE768 /* PinInfoViewController.swift */; };
+		7575CDE62BD2E09E00D22F15 /* PinAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7575CDE52BD2E09E00D22F15 /* PinAddViewController.swift */; };
+		758F1E0E2BD4529F0078E3EE /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F1E0D2BD4529F0078E3EE /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		750396882BCF6128006271ED /* Errands.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Errands.xctestplan; sourceTree = "<group>"; };
+		751DD4672BD6F5CA0061CD07 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		752DBDBB2BCF319800440752 /* Errands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Errands.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752DBDBE2BCF319900440752 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		752DBDC02BCF319900440752 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +32,9 @@
 		752DBDCA2BCF319900440752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		752DBDCC2BCF319900440752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75420B1E2BCF38C0000F82C6 /* Ollie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ollie.swift; sourceTree = "<group>"; };
+		7571AC1D2BD0633600ECE768 /* PinInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinInfoViewController.swift; sourceTree = "<group>"; };
+		7575CDE52BD2E09E00D22F15 /* PinAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAddViewController.swift; sourceTree = "<group>"; };
+		758F1E0D2BD4529F0078E3EE /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +71,12 @@
 				752DBDBE2BCF319900440752 /* AppDelegate.swift */,
 				752DBDC02BCF319900440752 /* SceneDelegate.swift */,
 				752DBDC22BCF319900440752 /* ViewController.swift */,
+				7571AC1D2BD0633600ECE768 /* PinInfoViewController.swift */,
 				75420B1E2BCF38C0000F82C6 /* Ollie.swift */,
 				752DBDC42BCF319900440752 /* Main.storyboard */,
+				751DD4672BD6F5CA0061CD07 /* LocationSearchTable.swift */,
+				758F1E0D2BD4529F0078E3EE /* NotesViewController.swift */,
+				7575CDE52BD2E09E00D22F15 /* PinAddViewController.swift */,
 				752DBDC72BCF319900440752 /* Assets.xcassets */,
 				752DBDC92BCF319900440752 /* LaunchScreen.storyboard */,
 				752DBDCC2BCF319900440752 /* Info.plist */,
@@ -146,7 +158,11 @@
 				752DBDC32BCF319900440752 /* ViewController.swift in Sources */,
 				752DBDBF2BCF319900440752 /* AppDelegate.swift in Sources */,
 				752DBDC12BCF319900440752 /* SceneDelegate.swift in Sources */,
+				751DD4682BD6F5CA0061CD07 /* LocationSearchTable.swift in Sources */,
+				758F1E0E2BD4529F0078E3EE /* NotesViewController.swift in Sources */,
 				75420B1F2BCF38C0000F82C6 /* Ollie.swift in Sources */,
+				7575CDE62BD2E09E00D22F15 /* PinAddViewController.swift in Sources */,
+				7571AC1E2BD0633600ECE768 /* PinInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
