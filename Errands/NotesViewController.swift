@@ -11,16 +11,20 @@ class NotesViewController: UIViewController, UIImagePickerControllerDelegate, UI
 
     
     @IBOutlet weak var note: UITextView!
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    var pTitle: String?
-    var pDescription: String?
+    var mapPin: MapPin?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = pTitle
-        note.text = pDescription
+        if let mapPin {
+            self.title = mapPin.title
+            if let paragraph = mapPin.note {
+                note.attributedText = paragraph
+            }
+        }
         
         let addPictureButton = UIBarButtonItem(title: "Add Picture", image: UIImage(systemName: "photo.badge.plus") , target: self, action: #selector(addNewPicture))
         let shareNoteButton = UIBarButtonItem(title: "Share Note", image: UIImage(systemName: "square.and.arrow.up"), target: self, action: #selector(shareNote))
@@ -28,6 +32,23 @@ class NotesViewController: UIViewController, UIImagePickerControllerDelegate, UI
         navigationItem.rightBarButtonItems = [addPictureButton, shareNoteButton]
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let mapPin {
+            self.title = mapPin.title
+            if let paragraph = mapPin.note {
+                note.attributedText = paragraph
+            }
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if let mapPin {
+            mapPin.note = note.attributedText
+            
+            try? context.save()
+        }
     }
     
     @objc func shareNote() {
@@ -86,6 +107,7 @@ class NotesViewController: UIViewController, UIImagePickerControllerDelegate, UI
             mutableAttributedString.append(attributedString)
             
             note.attributedText = mutableAttributedString
+            
         }
         
         dismiss(animated:true)
@@ -95,14 +117,5 @@ class NotesViewController: UIViewController, UIImagePickerControllerDelegate, UI
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

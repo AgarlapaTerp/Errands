@@ -13,6 +13,7 @@ class LocationSearchTable: UITableViewController {
     var mapView: MKMapView? = nil
     
     var handleMapSearchDelegate:HandleMapSearch? = nil
+    var makePin = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,9 +51,19 @@ class LocationSearchTable: UITableViewController {
 
     }
     
+    func isValidFormat(_ input: String) -> Bool {
+        let pattern = #"^-?\d+(\.\d+)?,-?\d+(\.\d+)?$"#
+        let regex = try! NSRegularExpression(pattern: pattern)
+        let range = NSRange(location: 0, length: input.utf16.count)
+        return regex.firstMatch(in: input, options: [], range: range) != nil
+    }
+
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedItem = matchingItems[indexPath.row].placemark
-        handleMapSearchDelegate?.dropPinZoomIn(placemark: selectedItem)
+        
+        handleMapSearchDelegate?.dropPinZoomIn(placemark: selectedItem, makePin: makePin)
+        
         self.dismiss(animated: true)
     }
     
@@ -108,6 +119,7 @@ extension LocationSearchTable : UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         guard let mapView = mapView,
                 let searchBarText = searchController.searchBar.text else { return }
+        makePin = !isValidFormat(searchBarText)
         
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = searchBarText

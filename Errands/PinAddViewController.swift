@@ -5,6 +5,7 @@
 //  Created by user256510 on 4/19/24.
 //
 
+import CoreData
 import UIKit
 import MapKit
 
@@ -16,6 +17,9 @@ class PinAddViewController: UIViewController {
     
     var mapView: MKMapView?
     var placeHolder: (any MKAnnotation)?
+    
+    //core data context
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     
     
@@ -30,11 +34,25 @@ class PinAddViewController: UIViewController {
         
         //removes placeholder annotation when view dissapears
         if let placeHolder = placeHolder {
-            if let title = placeHolder.title {
-                if title == "Title" { mapView?.removeAnnotation(placeHolder) }
+            if let title = placeHolder.title, let subtitle = placeHolder.subtitle {
+                if title == "Title" {
+                    mapView?.removeAnnotation(placeHolder)
+                } else {
+                    //adding to coredata
+                    let newItem = MapPin(context: context)
+                    newItem.latitude = placeHolder.coordinate.latitude
+                    newItem.longitude = placeHolder.coordinate.longitude
+                    newItem.id = UUID()
+                    newItem.title = title
+                    newItem.subTitle = subtitle
+                    newItem.note = NSAttributedString(string: "")
+                    newItem.address = ""
+                    
+                }
             }
         }
     }
+    
     
     
     @IBAction func addPin(_ sender: UIButton) {
@@ -77,14 +95,6 @@ class PinAddViewController: UIViewController {
         
         addButton.isEnabled = !title.isEmpty && !desc.isEmpty
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
