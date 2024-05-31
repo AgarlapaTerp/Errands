@@ -1,7 +1,4 @@
 # Errands 
-
-## Overview
-### Description
 An interactive way for users to jot down notes about their daily tasks, displaying a map with pins representing frequented locations. Clicking into each pin reveals a notes screen with thoughts and reminders associated with that place, from grocery lists to workout routines.
 
 
