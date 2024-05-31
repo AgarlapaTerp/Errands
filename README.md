@@ -1,5 +1,8 @@
 # Errands 
 
+## Overview
+### Description
+An interactive way for users to jot down notes about their daily tasks, displaying a map with pins representing frequented locations. Clicking into each pin reveals a notes screen with thoughts and reminders associated with that place, from grocery lists to workout routines.
 
 
 ## Demo
@@ -18,9 +21,6 @@
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
 
-## Overview
-### Description
-An interactive way for users to jot down notes about their daily tasks, displaying a map with pins representing frequented locations. Clicking into each pin reveals a notes screen with thoughts and reminders associated with that place, from grocery lists to workout routines.
 
 ### App Evaluation
 - **Mobile**: This app is more than just a glorified website, it contains an interactive map and many different views to organize the content. The app will also use location to show pins that are closest to the user.
