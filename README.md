@@ -17,7 +17,6 @@
 1. [Overview](#Overview)
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
-4. [Schema](#Schema)
 
 ## Overview
 ### Description
@@ -65,13 +64,6 @@ Table Screen
 
 ![schema](https://github.com/abgbro/Errands/assets/156050659/3a3ccfad-54a9-4c9a-a82a-98e26de1e89a)
 
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
-
-## Schema 
-
-[This section will be completed in Unit 9]
 
 ### Models
 
