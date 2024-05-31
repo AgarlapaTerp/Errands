@@ -4,15 +4,23 @@ Original App Design Project - README Template
 # Errands 
 
 
+
+## Demo
+<div>
+    <a href="https://www.loom.com/share/82b6f4234114454dbb897f1659913edb">
+    </a>
+    <a href="https://www.loom.com/share/82b6f4234114454dbb897f1659913edb">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/82b6f4234114454dbb897f1659913edb-with-play.gif">
+    </a>
+  </div>
+
+
 ## Table of Contents
 
 1. [Overview](#Overview)
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
 4. [Schema](#Schema)
-5. [Sprint 1](#SPRINT-1)
-6. [Sprint 2](#SPRINT-2)
-7. [Sprint 3](#SPRINT-3)
 
 ## Overview
 ### Description
@@ -27,25 +35,7 @@ An interactive way for users to jot down notes about their daily tasks, displayi
 
 ## Product Spec
 
-### 1. User Stories (Required and Optional)
-
-**Required Must-have Stories**
-
-- [X]  User must be presented a map zoomed into their location, with nearby pins
-- [X]  User must be able to scroll around the map
-- [X]  User must be able to place a new pin if they need
-- [X]  User must be able to press on a pin and navigate to a details screen
-- [X]  User must be able to see a details screen with all of their notes
-- [X]  User must be able to tab to a table view to see all of the pins they have made, with a navigation to the corresponding details screen
-
-**Optional Nice-to-have Stories**
-
-- [X]  Users can label pins to help organize their tasks
-- [X]  Users can share notes to other people
-- [ ]  Users can make multiple notes with folders, and more intricate management
-- [X]  Users can press on a pin and start navigation towards that location
-
-### 2. Screen Archetypes
+### Screen Archetypes
 
 Map Screen
 * User can look at pins in the surroundings
@@ -57,7 +47,7 @@ Detail Screen
 Table Screen
 * Users can see all of the pins they have made, and click into the detail view from there 
 
-### 3. Navigation
+### Navigation
 
 **Tab Navigation** (Tab to Screen)
 
@@ -95,60 +85,3 @@ Pin model
 - Address
 - Notes associated
 
-## SPRINT-1
-## What I've Done
-- Added a tab controller along with some navigation controllers
-- Added a view for the mapkit
-- Allowed users to place pins with a long press
-## What I'm working on
-- Ability to get user's real time location on the map
-- A sheet that opens to make pins
-## What's next
-- Fixing navigation
-- Making segues from pins to table views
-- Making a notes section
-
-## SPRINT-2
-## What I've Done
-- Getting real time location on map
-- Sheet that opens to make pins
-- Sheet that opens to view pins
-   - Button that lets you delete the pin
-   - Button that takes you to apple maps app to get directions to map
-- Making notes section
-   - Can upload pictures to the notes now
-   - Can share the notes with others
-   - Can edit the notes
-- Fixed navigation
-- Making segues to table views
-- implemented a search bar on the map using tableview
-   - can search for places in your maps region
-        - clicking on a place will pin itself on the region
-- Implemented a UIContentUnavailableView for table section of map
-
-## What I'm working on
-- Core data models and persistent state
-
-## What needs to be done
-- Complete table view with a button to get to notes on each row of the table
-- Add address to pins, and fix distance of pins so that it shows distance in miles
-- Sorting feature of pins to make it easier to find pins on the table view
-- Making UI in the sheets copy and pasteable
-- Checking that current location is actually being updated
-
-## SPRINT-3
-## What I've Done
-- Core Data models and persistent state
-- Completed table view with a button to get to notes on each row of the table
-- Sorting features to make it easier to find pins on the table views
-- Current location updating with user
-- Adding swipe features to delete pins and copy coordinates of pins to search
-
-## Demo
-<div>
-    <a href="https://www.loom.com/share/82b6f4234114454dbb897f1659913edb">
-    </a>
-    <a href="https://www.loom.com/share/82b6f4234114454dbb897f1659913edb">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/82b6f4234114454dbb897f1659913edb-with-play.gif">
-    </a>
-  </div>
